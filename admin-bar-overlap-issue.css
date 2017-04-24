@@ -1,0 +1,18 @@
+// This fixes the WordPress admin-bar 28px overlap issue with Bootstrap 3.
+
+body.admin-bar .navbar {
+  position:fixed;
+  top: 28px;
+  z-index: 1000;
+  height: 40px;
+}
+  
+ 
+ // If the above does not work try this if your nav is wrapped in .header
+ 
+ body.admin-bar .header {
+  position:fixed;
+  top: 28px;
+  z-index: 1000;
+  height: 40px;
+}
